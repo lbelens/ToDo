@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Todo</title>
+</head>
+<body>
+    <!-- Va a mostrar la lista de las tareas y podrá actualizar, agregar y eliminar una tarea -->
+    <h1 class="title-app">Mi lista de tareas</h1>
+    <ul class="list-todo">
+        <button class="btn-add">Crear nueva tarea</button>
+    </ul>
+            <!-- Esto se va a generar dinamicamente con javascript -->
+    <template id="list-todo-template">
+        <li class="wrapper-todo">
+            <div class="container-list-todo">
+                <h3 class="title-todo cursor-pointer"> </h3>
+                <div class="container-description-todo">
+                    <p class="descripcion-todo"></p>
+                </div>
+        
+                <div class="wrapper-category-todo">
+                    <div class="color-category"></div><input type="text" class="category-name">
+                </div>
+                <div class="wrapper-btn">
+                    <button class="btn-delete">Eliminar</button>
+                </div>
+            </div>
+        </li>
+    </template>
+
+   <script type="module"  src="../js/home.js"></script>
+   <script type="module" src="../js/http-axios.js"></script>
+   <!-- <script type="module"  src="./http-fetch.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Crear nueva tarea</title>
+</head>
+<body>
+    <form action="#" class="wrapper-todo" id="form-todo">
+        <textarea class="title-todo" placeholder="Título"></textarea>
+
+        <div class="wrapper-color-category">
+            <div class="wrapper-category-todo">
+                <button class="color-category color-pink" data-id="d87093"></button> 
+                <input type="text" class="category-name" placeholder="Categoría">
+            </div>
+            <div id="list-category-color" class="wrapper-category-list-color">
+                <button class="color-category-list color-pink" id="d87093"></button>
+                <button class="color-category-list  color-green" id="79d02d"></button>
+                <button class="color-category-list color-purple" id="800080"></button>
+                <button class="color-category-list color-red" id="c90505"></button>
+                <button class="color-category-list color-darkblue" id="03249e"></button>
+                <button class="color-category-list color-orange" id="ff5500"></button>
+                <button class="btn-close">Cerrar</button>
+            </div>
+        </div>
+     
+        <textarea name="description" id="" class="description-todo" placeholder="descripcion" rows="6"></textarea>
+       
+        <div class="wrapper-btn">
+            <button class="btn-save" id="btn-save">Guardar</button>
+        </div>
+
+        <a href="./home.html">Ir al inicio</a>
+    </form>
+
+    <script type="module" src="../js/general.js"></script>
+    <script type="module" src="../js/agregar.js"> </script>
+
+</body>
+</html>

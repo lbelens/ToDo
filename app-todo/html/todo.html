@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" class="wrapper-todo" id="form-todo">
+        <textarea class="title-todo" readonly></textarea>
+        
+        <div class="wrapper-color-category">
+            <div class="wrapper-category-todo">
+                <button class="color-category"></button> 
+                <input type="text" class="category-name" readonly>
+            </div>
+            <div id="list-category-color" class="wrapper-category-list-color">
+                <button class="color-category-list color-pink" id="d87093"></button>
+                <button class="color-category-list  color-green" id="79d02d"></button>
+                <button class="color-category-list color-purple" id="800080"></button>
+                <button class="color-category-list color-red" id="c90505"></button>
+                <button class="color-category-list color-darkblue" id="03249e"></button>
+                <button class="color-category-list color-orange" id="ff5500"></button>
+                <button class="btn-close">Cerrar</button>
+            </div>
+        </div>
+     
+        <textarea name="description" id="" class="description-todo" readonly></textarea>
+       
+        <div class="wrapper-btn">
+            <!-- <a href="./agregar.html" class="btn-add">Añadir nueva tarea</a> -->
+            <button class="btn-edit" id="btn-update">Editar</button>
+            <button class="btn-cancel">Cancelar</button>
+            <button class="btn-delete">Eliminar</button>
+        </div>
+
+        <a href="./home.html">Ir al inicio</a>
+    </form>
+
+
+
+    <script type="module" src="../js/general.js"></script>
+    <script type="module" src="../js/todo.js"></script>
+</body>
+</html>
